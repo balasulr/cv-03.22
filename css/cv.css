@@ -1,0 +1,11 @@
+.topMargin {
+    margin-top: 0em;
+}
+h3 { font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+table {width: 100%; border-collapse: collapse;}
+table,td { border: 1px solid dimgray;}
+.personal {font-style: italic;}
+.company {font-size: 1.0em; font-weight: bold; font-style: italic;}
+.role {font-weight: bold;}
+.location {font-weight: normal;}
+.duration {font-style: italic;}
