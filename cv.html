@@ -2,60 +2,106 @@
 <html lang="en">
 <head>
     <title>CV Webpage</title>
+    <!-- Bootstap library from https://getbootstrap.com/  -->
+    <!-- Located underneath the Download & is the first link under CDN via jsDelivr-->
+    <!-- If use the script tag in bootstrap, have to have jQuery.  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous">
     <link href="css/cv.css" rel="stylesheet">
 </head>
 <body>
     <div>
-        <h3 class="topMargin">Personal Info:</h3>
-        <span class="personal">Lakshmi</span>
-        <span class="personal">Balasubramaniam</span>
-        <br>
-        <span class="personal">Mason</span>
-        <span class="personal">OH</span>
-        <span class="personal">45040</span>
+        <h3 style="margin-bottom: 5px;">Personal Information:</h3>
+        <!-- Each of the span tags below had class="personal" and had styles in cv.css-->
+        <div>
+            <span class="fst-italic">Lakshmi</span>
+            <span class="fst-italic">Balasubramaniam |</span>
+            <span>lrb697@gmail.com |</span>
+            <span class="fst-italic">Mason</span>
+            <span class="fst-italic">OH</span>
+            <span class="fst-italic">45040</span> <br>
+            <a href="http://www.linkedin.com/in/lakshmibalasubram" target=_blank class="link-primary"> Linkedin || </a>
+            <a href="https://github.com/balasulr" target=_blank class="link-primary"> GitHub </a> <br>
+            <span class="fst-italic"> Responsibility | Consistency | Adaptability | Intellection | Harmony</span> <br>
+            </div>
     </div>
-    <hr>
 
     <div>
-        <h3 class="topMargin">Technologies:</h1>
-            <table>
+        <hr style="margin-top:5px; margin-bottom:5px">
+    </div>
+
+    <div>
+        <h3 style="margin-bottom: 0px;">Technologies:</h1>
+            <table class="table table-sm table-hover table-bordered caption-top">
+                <caption>Table showing technolgies used in bootcamp</caption>
                 <tbody>
                     <tr>
                         <td>Git</td>
-                        <td>GitHub</td>
+                        <td><a href="https://github.com/balasulr?tab=repositories" target=_blank class="link-primary"> GitHub </a></td>
                         <td>SQL</td>
-                        <td>C#</td>
+                        <td>SQL Server Management Studio (SSMS)</td>
                     </tr>
                     <tr>
-                        <td>EF</td>
+                        <td>C#</td>
+                        <td>.Net</td>
+                        <td>ASP.Net</td>
+                        <td>NET Core</td>
+                    </tr>
+                    <tr>
+                        <td>Entity Framework Core</td>
+                        <td>MVC</td>
                         <td>WebApi</td>
-                        <td>Java</td>
                         <td>Spring</td>
                     </tr>
                     <tr>
-                        <td>Hibernate</td>
-                        <td>Scrum</td>
-                        <td>Strengths</td>
+                        <td>Java</td>
                         <td>HTML</td>
+                        <td>CSS</td>
+                        <td>Angular</td>
                     </tr>
                     <tr>
-                        <td>CSS</td>
-                        <td>Bootstrap</td>
-                        <td>Javascript</td>
+                        <td>Visual Studio 2019</td>
+                        <td>Visual Studio Code</td>
+                        <td>MySQL Workbench</td>
+                        <td>Postman</td>
+                    </tr>
+                    <tr>
+                        <td>Eclipse</td>
+                        <td><a href="https://getbootstrap.com/" target=_blank class="link-primary"> Bootstrap </a></td>
+                        <td>JavaScript</td>
+                        <td>Typescript</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>jQuery</td>
+                        <td>Agile/Scrum</td>
+                        <td>Hibernate</td>
+                        <td>Strengths</td>
+                    </tr>
+                    <tr>
+                        <td>JSON</td>
+                        <td>REST</td>
+                        <td>Maven</td>
                         <td>&nbsp;</td>
                     </tr>
                 </tbody>
             </table>
     </div>
-    <hr>
+    
+    <div>
+        <hr style="margin-top:5px; margin-bottom:5px">
+    </div>
 
     <div>
-        <h3 class="topMargin">Experience:</h3>
+        <h3 style="margin-bottom: 5px;">Experience:</h3>
+        <!-- For both experiences, company, role, location & duration were name for the span classes with styles in cv.css -->
         <div>
-            <span class="company">TEKsystems / Fourci Consulting</span>
-            <span class="role">Deloitte Help desk/call consultant</span>
-            <span class="location">Remote</span>
-            <span class="duration">March 2021 – December 2021</span>
+            <span class="fw-bold fst-italic">TEKsystems / Fourci Consulting</span>
+            <span>Deloitte Help desk/call consultant,</span>
+            <span>Remote</span>
+            <p class="fst-italic" style="margin-bottom:0px;">March 2021 – December 2021</p>
             <ul>
                 <li>Assisted with pandemic related unemployment benefits queries</li>
                 <li>Queries came through the Ohio Department of Job and Family Services (ODJFS) Covid unemployment project</li>
@@ -64,21 +110,24 @@
             </ul>
         </div>
         <div>
-            <span class="company">Kunduru Foundation</span>
-            <span class="role">Internship</span>
-            <span class="location">Remote</span>
-            <span class="duration">January 2021 – November 2021</span>
+            <span class="fw-bold fst-italic">Kunduru Foundation</span>
+            <span class="fst-normal"> Internship,</span>
+            <span>Remote</span>
+            <p class="fst-italic" style="margin-bottom:0px;">January 2021 – November 2021</p>
             <ul>
                 <li>Chakra is an event and membership management platform for a non-profit organization</li>
                 <li>Created data models for the Chakra application using PostgreSQL 13</li>
                 <li>Write requirements for various use cases for the Chakra application such as payment methods</li>
             </ul>
-        </div>        
-        <hr>
+        </div>
+        
+        <div>
+            <hr style="margin-top:5px; margin-bottom:5px">
+        </div>
 
-        <h3 class="topMargin">Education:</h3>
+        <h3 style="margin-bottom:3px;">Education:</h3>
         <ul>
-            <li>MAX Technical Training | MAXimum Coding Bootcamp | 2022 </li>
+            <li><span class="fw-bold">MAX Technical Training</span> | MAXimum Coding Bootcamp | 2022 </li>
             <li>Columbus State Community College | IT Workforce Certificate | Cybersecurity Certificate | 2020</li>
             <li>University of Cincinnati | Bachelor of Science | Industrial Management with a Business Analytics Minor | 2019 </li>
             <li>Dublin Coffman High School | High School | 2015 </li>
